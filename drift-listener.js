@@ -1,7 +1,5 @@
 <script>
 /* Drift chat is loaded in an iframe, the GTM object is in the parent element so the datalayer needs to be triggered in the parent element.*/
-
-window.dataLayer = window.dataLayer || []
 parent.dataLayer = parent.dataLayer || []
 window.drift.on('ready',function(api){ 
   window.drift.on('message:sent',function(event){ 
